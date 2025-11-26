@@ -7,7 +7,7 @@ import 'package:intl/intl.dart';
 
 class HomeController extends GetxController {
   final TextEditingController cityController = TextEditingController();
-  static String API_KEY = "bf57cfa9d8a94eddaf9100716252611";
+  static String API_KEY = "";
 
   String location = "Faisalabad";
   String weatherIcon = "heavycloudy.png";
