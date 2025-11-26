@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
@@ -28,7 +26,7 @@ class Home extends StatelessWidget {
               width: size.width,
               height: size.height,
               padding: const EdgeInsets.only(top: 20, left: 10, right: 10),
-              color: constants.primaryColor.withOpacity(.1),
+              color: constants.primaryColor.withAlpha(25),
               child: SingleChildScrollView(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
@@ -40,7 +38,7 @@ class Home extends StatelessWidget {
                             borderRadius: BorderRadius.circular(20),
                             boxShadow: [
                               BoxShadow(
-                                color: constants.primaryColor.withOpacity(0.2),
+                                color: constants.primaryColor.withAlpha(51),
                                 spreadRadius: 5,
                                 blurRadius: 7,
                                 offset: const Offset(
@@ -171,7 +169,7 @@ class Home extends StatelessWidget {
                             ),
                             SizedBox(
                               height: 160,
-                              child: Image.asset("assets/" + logic.weatherIcon),
+                              child: Image.asset("assets/${logic.weatherIcon}"),
                             ),
                             Row(
                               crossAxisAlignment: CrossAxisAlignment.start,
@@ -327,7 +325,7 @@ class Home extends StatelessWidget {
                                           offset: const Offset(0, 1),
                                           blurRadius: 5,
                                           color: constants.primaryColor
-                                              .withOpacity(.2),
+                                              .withAlpha(51),
                                         ),
                                       ]),
                                   child: Column(
@@ -343,7 +341,7 @@ class Home extends StatelessWidget {
                                         ),
                                       ),
                                       Image.asset(
-                                        'assets/' + forecastWeatherIcon,
+                                        'assets/$forecastWeatherIcon',
                                         width: 20,
                                       ),
                                       Row(

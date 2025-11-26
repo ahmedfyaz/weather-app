@@ -1,64 +1,126 @@
-# Weather App
+☁️ Flutter Weather App
 
-A beautiful and responsive weather application built with Flutter that provides real-time weather data, hourly forecasts, and a 7-day forecast for any city.
+A modern, responsive weather application built with Flutter and GetX for robust state management. This app fetches real-time weather data and forecasts using a Weather API.
 
-## Screenshots
+📱 Screenshots
 
-*(Here you can add screenshots of your application)*
+Home Screen
 
-| Home Screen                                     | Search Modal                                  | 7-Day Forecast                                  |
-| ----------------------------------------------- | --------------------------------------------- | ----------------------------------------------- |
-| <img src="path/to/home_screen.png" width="250">  | <img src="path/to/search.png" width="250">    | <img src="path/to/forecast.png" width="250">    |
+Search City
 
-## Features
+Details View
 
-- **Real-time Weather:** Get the current temperature, weather condition, wind speed, humidity, and cloud cover.
-- **Hourly Forecast:** View a scrollable hourly forecast for the current day.
-- **7-Day Forecast:** See a detailed weather forecast for the next 7 days.
-- **City Search:** Search for any city worldwide to get its weather data.
-- **Dynamic UI:** The user interface displays icons that correspond to the current weather conditions.
-- **Responsive Design:** The layout is designed to be responsive and adapt to various screen sizes.
+<img src="assets/screenshots/home.jpeg" width="200" alt="Home Screen"/>
 
-## Technologies Used
+<img src="assets/screenshots/search.pgeg" width="200" alt="Search"/>
 
-- **Framework:** [Flutter](https://flutter.dev/)
-- **Language:** [Dart](https://dart.dev/)
-- **State Management:** [GetX](https://pub.dev/packages/get)
-- **API Client:** [http](https://pub.dev/packages/http)
-- **Date Formatting:** [intl](https://pub.dev/packages/intl)
-- **UI Components:** [modal_bottom_sheet](https://pub.dev/packages/modal_bottom_sheet)
+<img src="assets/screenshots/details.jpeg" width="200" alt="Forecast"/>
 
-## API Used
+Note: Replace the paths above with your actual screenshot paths.
 
-This project relies on the [WeatherAPI](https://www.weatherapi.com/) to fetch all weather-related data. You will need to get your own free API key to run the application.
+✨ Features
 
-## Setup and Installation
+Real-time Weather: Current temperature, humidity, wind speed, and pressure.
 
-Follow these steps to get the project up and running on your local machine.
+Location Based: Automatically detects user location to show local weather (optional).
 
-1.  **Clone the Repository**
-    ```sh
-    git clone https://github.com/your-username/weather-app.git
-    cd weather-app
-    ```
+Search Functionality: Search weather by city name.
 
-2.  **Get an API Key**
-    - Go to [WeatherAPI.com](https://www.weatherapi.com/) and sign up for a free API key.
-    - Open the file `lib/controllers/home_controller.dart`.
-    - Replace the placeholder API key with your own key:
-      ```dart
-      static String API_KEY = "YOUR_API_KEY_HERE";
-      ```
+State Management: Reactive UI updates using GetX.
 
-3.  **Install Dependencies**
-    ```sh
-    flutter pub get
-    ```
+Error Handling: Graceful handling of API errors and network issues.
 
-4.  **Run the Application**
-    ```sh
-    flutter run
-    ```
+Responsive Design: Optimized for both Android and iOS.
 
----
-*This README was generated with assistance from an AI tool.*
+🛠️ Tech Stack
+
+Framework: Flutter
+
+Language: Dart
+
+State Management: GetX
+
+Networking: http (or Dio)
+
+Location: geolocator (if used)
+
+API: OpenWeatherMap (or your specific provider)
+
+🚀 Getting Started
+
+Follow these steps to run the project locally.
+
+Prerequisites
+
+Flutter SDK installed (Installation Guide)
+
+Dart SDK
+
+An IDE (VS Code or Android Studio)
+
+An API Key from your Weather Provider
+
+Installation
+
+Clone the repository:
+
+git clone [https://github.com/your-username/weather-app-getx.git](https://github.com/your-username/weather-app-getx.git)
+cd weather-app-getx
+
+
+
+Install dependencies:
+
+flutter pub get
+
+
+
+Configure API Key:
+
+Check lib/models/constants.dart (or create api_constants.dart if you prefer not to commit keys) to add your API credentials.
+
+Run the app:
+
+flutter run
+
+
+
+📂 Project Structure
+
+This project follows a modular structure organized by feature and function.
+
+lib/
+├── components/          # Reusable UI widgets
+│   └── weather_item.dart
+├── controllers/         # GetX Controllers for logic & state
+│   └── home_controller.dart
+├── models/              # Data models and app constants
+│   └── constants.dart
+├── ui/                  # Application screens
+│   ├── detail_page.dart
+│   ├── get_started.dart
+│   └── home.dart
+└── main.dart            # Application entry point
+
+
+🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+Fork the Project
+
+Create your Feature Branch (git checkout -b feature/AmazingFeature)
+
+Commit your Changes (git commit -m 'Add some AmazingFeature')
+
+Push to the Branch (git push origin feature/AmazingFeature)
+
+Open a Pull Request
+
+📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+Made with ❤️ by
+
+$$Your Name$$
