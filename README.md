@@ -8,11 +8,11 @@ Home Screen
 
 Search City
 
-Details View
+Forecast View
 
 <img src="assets/screenshots/home.jpeg" width="200" alt="Home Screen"/>
 
-<img src="assets/screenshots/search.jgeg" width="200" alt="Search"/>
+<img src="assets/screenshots/search.jpeg" width="200" alt="Search"/>
 
 <img src="assets/screenshots/forecast.jpeg" width="200" alt="Forecast"/>
 
