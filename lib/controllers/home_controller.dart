@@ -10,7 +10,7 @@ class HomeController extends GetxController {
   static String API_KEY = "bf57cfa9d8a94eddaf9100716252611";
 
   String location = "Faisalabad";
-  String weatherIcon = "heavycloud.png";
+  String weatherIcon = "heavycloudy.png";
   int temperature = 0;
   int windSpeed = 0;
   int humidity = 0;
@@ -48,8 +48,8 @@ class HomeController extends GetxController {
       currentDate = newDate;
 
       currentWeatherStatus = currentWeather["condition"]["text"];
-      weatherIcon =
-          "${currentWeatherStatus.replaceAll(' ', '').toLowerCase()}.png";
+      weatherIcon = getWeatherIcon(currentWeatherStatus);
+
       temperature = currentWeather["temp_c"].toInt();
       windSpeed = currentWeather["wind_kph"].toInt();
       humidity = currentWeather["humidity"].toInt();
@@ -60,8 +60,16 @@ class HomeController extends GetxController {
       hourlyWeatherForecast = dailyWeatherForecast[0]["hour"];
       update();
     } catch (e) {
-      Get.snackbar("Error", "Something went wrong");
+      Get.snackbar("Error", "Something went wrong! Please try again.");
     }
+  }
+
+  String getWeatherIcon(String weatherStatus) {
+    final status = weatherStatus.replaceAll(' ', '').toLowerCase();
+    if (status == "heavycloud") {
+      return "heavycloudy.png";
+    }
+    return "$status.png";
   }
 
   static String getShortLocationName(String s) {
