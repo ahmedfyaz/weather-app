@@ -12,9 +12,9 @@ Details View
 
 <img src="assets/screenshots/home.jpeg" width="200" alt="Home Screen"/>
 
-<img src="assets/screenshots/search.pgeg" width="200" alt="Search"/>
+<img src="assets/screenshots/search.jgeg" width="200" alt="Search"/>
 
-<img src="assets/screenshots/details.jpeg" width="200" alt="Forecast"/>
+<img src="assets/screenshots/forecast.jpeg" width="200" alt="Forecast"/>
 
 Note: Replace the paths above with your actual screenshot paths.
 
