@@ -64,7 +64,7 @@ Installation
 
 Clone the repository:
 
-git clone [https://github.com/your-username/weather-app-getx.git](https://github.com/your-username/weather-app-getx.git)
+git clone [https://github.com/ahmedfyaz/weather-app-getx.git](https://github.com/your-username/weather-app-getx.git)
 cd weather-app-getx
 
 
@@ -117,10 +117,9 @@ Push to the Branch (git push origin feature/AmazingFeature)
 
 Open a Pull Request
 
-📄 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 Made with ❤️ by
 
-$$Your Name$$
+$$AHMED$$
